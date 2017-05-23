@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="Tor Chat">
+			<action name="Execute">
+				<execute>utox</execute>
+			</action>
+		</item>
+		<item label="QR code generator">
+			<action name="Execute">
+				<execute>qtqr</execute>
+			</action>
+		</item>
+		<item label="Calendar">
+			<action name="Execute">
+				<execute>zenity --calendar</execute>
+			</action>
+		</item>
+		<item label="File Manager">
+			<action name="Execute">
+				<execute>caja</execute>
+			</action>
+		</item>
+		<item label="Terminal emulator">
+			<action name="Execute">
+				<execute>terminator ssh jomel@192.168.1.46</execute>
+			</action>
+		</item>
+		<item label="TOR ">
+			<action name="Execute">
+				<execute>/home/jomel/tor-browser_en-US/Browser/start-tor-browser</execute>
+			</action>
+		</item>
+		<item label="VLC">
+			<action name="Execute">
+				<execute>vlc</execute>
+			</action>
+		</item>
+		<menu id="root-menu-931536" label="Monitor Config">
+			<item label="Laptop Only">
+				<action name="Execute">
+					<execute>/home/jomel/scripts/laptop.sh</execute>
+				</action>
+			</item>
+			<item label="External Screen">
+				<action name="Execute">
+					<execute>/home/jomel/scripts/external.sh</execute>
+				</action>
+			</item>
+		</menu>
+		<item label="Calculator">
+			<action name="Execute">
+				<execute>gnome-calculator</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'menu' package to work -->
+		<item label="rails note">
+			<action name="Execute">
+				<execute>pluma ~/rails_notes</execute>
+			</action>
+		</item>
+		<menu id="/Debian"/>
+		<separator/>
+		<menu id="root-menu-40200" label="Open Box Config">
+			<item label="Mate Control Center">
+				<action name="Execute">
+					<execute>mate-control-center</execute>
+				</action>
+			</item>
+			<item label="bash edit ">
+				<action name="Execute">
+					<execute>subl /home/jomel/.bashrc</execute>
+				</action>
+			</item>
+			<item label="lxappearance">
+				<action name="Execute">
+					<execute>lxappearance</execute>
+				</action>
+			</item>
+			<item label="New Item">
+				<action name="Execute">
+					<execute>xfce4-power-manager-settings</execute>
+				</action>
+			</item>
+			<item label="tint2conf">
+				<action name="Execute">
+					<execute>tint2conf</execute>
+				</action>
+			</item>
+			<item label="Edit tint2rc">
+				<action name="Execute">
+					<execute>subl /home/jomel/.config/tint2/tint2rc</execute>
+				</action>
+			</item>
+			<item label="Autostart">
+				<action name="Execute">
+					<execute>subl  ~/.config/openbox/autostart </execute>
+				</action>
+			</item>
+			<item label="restart conky">
+				<action name="Execute">
+					<execute>killall conky &amp;&amp; conky</execute>
+				</action>
+			</item>
+			<item label="Conky">
+				<action name="Execute">
+					<execute>subl /home/jomel/.conkyrc</execute>
+				</action>
+			</item>
+			<item label="tint2 Config">
+				<action name="Execute">
+					<execute>tint2conf</execute>
+				</action>
+			</item>
+			<item label="Nitrogen">
+				<action name="Execute">
+					<execute>nitrogen</execute>
+				</action>
+			</item>
+			<item label="ObMenu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item label="ObConf">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="Arandr">
+				<action name="Execute">
+					<execute>arandr</execute>
+				</action>
+			</item>
+			<item label="Keyboard ShortCut">
+				<action name="Execute">
+					<execute>subl /home/jomel/.config/openbox/rc.xml</execute>
+				</action>
+			</item>
+		</menu>
+		<item label="Reconfigure">
+			<action name="Reconfigure"/>
+		</item>
+		<item label="Restart">
+			<action name="Restart"/>
+		</item>
+		<separator/>
+		<menu id="root-menu-451454" label="Logout">
+			<item label="Lock Computer">
+				<action name="Execute">
+					<execute>mate-screensaver-command -l</execute>
+				</action>
+			</item>
+			<item label="Logout">
+				<action name="Exit"/>
+			</item>
+			<item label="Restart">
+				<action name="Restart"/>
+			</item>
+			<item label="POWER OFF">
+				<action name="Execute">
+					<execute>poweroff</execute>
+				</action>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>
