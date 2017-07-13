@@ -31,6 +31,16 @@
 				<execute>/home/jomel/tor-browser_en-US/Browser/start-tor-browser</execute>
 			</action>
 		</item>
+		<item label="LTC">
+			<action name="Execute">
+				<execute>/home/jomel/litecoin-0.13.2/bin/litecoin-qt</execute>
+			</action>
+		</item>
+		<item label="Shutter">
+			<action name="Execute">
+				<execute>shutter</execute>
+			</action>
+		</item>
 		<item label="VLC">
 			<action name="Execute">
 				<execute>vlc</execute>
