@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="Openbox 3">
+		<item label="gcolor2">
+			<action name="Execute">
+				<execute>gcolor2</execute>
+			</action>
+		</item>
 		<item label="Tor Chat">
 			<action name="Execute">
 				<execute>utox</execute>
@@ -21,6 +26,11 @@
 				<execute>caja</execute>
 			</action>
 		</item>
+		<item label="ETH">
+			<action name="Execute">
+				<execute>ethereumwallet</execute>
+			</action>
+		</item>
 		<item label="Terminal emulator">
 			<action name="Execute">
 				<execute>terminator ssh jomel@192.168.1.46</execute>
@@ -36,14 +46,14 @@
 				<execute>/home/jomel/litecoin-0.13.2/bin/litecoin-qt</execute>
 			</action>
 		</item>
+		<item label="mysql-workbench ">
+			<action name="Execute">
+				<execute>mysql-workbench ~/Downloads/lakpue_schema.mwb</execute>
+			</action>
+		</item>
 		<item label="Shutter">
 			<action name="Execute">
 				<execute>shutter</execute>
-			</action>
-		</item>
-		<item label="VLC">
-			<action name="Execute">
-				<execute>vlc</execute>
 			</action>
 		</item>
 		<menu id="root-menu-931536" label="Monitor Config">
@@ -64,6 +74,21 @@
 			</action>
 		</item>
 		<!-- This requires the presence of the 'menu' package to work -->
+		<item label="Mga Tools">
+			<action name="Execute">
+				<execute>pluma ~/mga_tools</execute>
+			</action>
+		</item>
+		<item label="mysql-workbench">
+			<action name="Execute">
+				<execute>mysql-workbench</execute>
+			</action>
+		</item>
+		<item label="pgadmin3">
+			<action name="Execute">
+				<execute>pgadmin3</execute>
+			</action>
+		</item>
 		<item label="rails note">
 			<action name="Execute">
 				<execute>pluma ~/rails_notes</execute>
@@ -107,16 +132,18 @@
 					<execute>subl  ~/.config/openbox/autostart </execute>
 				</action>
 			</item>
-			<item label="restart conky">
-				<action name="Execute">
-					<execute>killall conky &amp;&amp; conky</execute>
-				</action>
-			</item>
-			<item label="Conky">
-				<action name="Execute">
-					<execute>subl /home/jomel/.conkyrc</execute>
-				</action>
-			</item>
+			<menu id="root-menu-40200-431426" label="Conky">
+				<item label="Conky">
+					<action name="Execute">
+						<execute>subl ~/.conky/.conky_crunchbang</execute>
+					</action>
+				</item>
+				<item label="Lower Conky">
+					<action name="Execute">
+						<execute>subl ~/.conky/conky_currency</execute>
+					</action>
+				</item>
+			</menu>
 			<item label="tint2 Config">
 				<action name="Execute">
 					<execute>tint2conf</execute>
