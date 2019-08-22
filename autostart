@@ -1,11 +1,7 @@
 tint2 &
 volti &
 xscreensaver -nosplash &
-easystroke &
 indicator-stickynotes &
-utox &
 nitrogen --restore &
-
-mate-control-center &
 transmission-gtk &
 clipit &
