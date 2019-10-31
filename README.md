@@ -7,5 +7,6 @@
 
 ## Instruction 
   - Copy for ~/.config/openbox
-
+  or 
+  - run ./install.sh
 
