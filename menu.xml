@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="Openbox 3">
+		<item label="laptop">
+			<action name="Execute">
+				<execute>/home/jomel/.screenlayout/laptop.sh</execute>
+			</action>
+		</item>
+		<item label="external">
+			<action name="Execute">
+				<execute>/home/jomel/.screenlayout/external_monitor.sh</execute>
+			</action>
+		</item>
 		<item label="gcolor2">
 			<action name="Execute">
 				<execute>gcolor2</execute>
@@ -104,7 +114,7 @@
 			</item>
 			<item label="bash edit ">
 				<action name="Execute">
-					<execute>subl /home/jomel/.bashrc</execute>
+					<execute>gnome-terminal --command=&quot;vim /home/jomel/.bashrc&quot;</execute>
 				</action>
 			</item>
 			<item label="lxappearance">
@@ -124,12 +134,12 @@
 			</item>
 			<item label="Edit tint2rc">
 				<action name="Execute">
-					<execute>subl /home/jomel/.config/tint2/tint2rc</execute>
+					<execute>gnome-terminal --command=&quot;vim /home/jomel/.config/tint2/tint2rc&quot;</execute>
 				</action>
 			</item>
 			<item label="Autostart">
 				<action name="Execute">
-					<execute>subl  ~/.config/openbox/autostart </execute>
+					<execute>gnome-terminal --command=&quot;vim ~/.config/openbox/autostart&quot;</execute>
 				</action>
 			</item>
 			<menu id="root-menu-40200-431426" label="Conky">
@@ -171,7 +181,7 @@
 			</item>
 			<item label="Keyboard ShortCut">
 				<action name="Execute">
-					<execute>subl /home/jomel/.config/openbox/rc.xml</execute>
+					<execute>gnome-terminal --command=&quot;vim  /home/jomel/.config/openbox/rc.xml&quot;</execute>
 				</action>
 			</item>
 		</menu>
