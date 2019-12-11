@@ -418,6 +418,15 @@
     </keybind>
 
     <!-- Thinkpad Specific Key -->
+    <keybind key="XF86AudioMicMute">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Mute</name>
+        </startupnotify>
+        <command>amixer set Capture toggle</command>
+      </action>
+    </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
         <startupnotify>
