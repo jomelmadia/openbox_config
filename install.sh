@@ -1,5 +1,4 @@
 #!/bin/bash
-
 function copy_config() {
   cp autostart ~/.config/openbox
   echo "Autostart Copied"
