@@ -1,7 +1,11 @@
+clipit &
+discord &
+indicator-stickynotes &
+liferea &
+mate-volume-control-status-icon &
+nitrogen --restore &
+slack &
 tint2 &
+transmission-gtk &
 volti &
 xscreensaver -nosplash &
-indicator-stickynotes &
-nitrogen --restore &
-transmission-gtk &
-clipit &
