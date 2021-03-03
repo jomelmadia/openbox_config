@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Nightmare-01</name>
-    <titleLayout>NLIMC</titleLayout>
+    <name>Natura</name>
+    <titleLayout>NLIC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,8 +57,8 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>Ubuntu Medium</name>
-      <size>8</size>
+      <name>Monospace</name>
+      <size>11</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -388,9 +388,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>gmrun</name>
+          <name>rofi -show drun</name>
         </startupnotify>
-        <command>gmrun</command>
+        <command>rofi -show drun</command>
       </action>
     </keybind>
     <!-- Window Tiling: Emulates Windows 7 Snap feature -->
@@ -416,7 +416,6 @@
     <keybind key="W-Up">
       <action name="Maximize"/>
     </keybind>
-
     <!-- Thinkpad Specific Key -->
     <keybind key="XF86AudioMicMute">
       <action name="Execute">
@@ -454,7 +453,6 @@
         <command>amixer -D pulse set Master 1+ toggle</command>
       </action>
     </keybind>
-
     <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
