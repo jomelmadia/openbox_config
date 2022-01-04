@@ -388,18 +388,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>rofi -show drun</name>
+          <name>rofi</name>
         </startupnotify>
-        <command>rofi -show drun</command>
-      </action>
-    </keybind>
-    <keybind key="W-Tab">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>rofi -show window</name>
-        </startupnotify>
-        <command>rofi -show window</command>
+        <command>rofi -combi-modi window,drun -show combi -modi combi</command>
       </action>
     </keybind>
     <!-- Window Tiling: Emulates Windows 7 Snap feature -->
