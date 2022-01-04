@@ -393,6 +393,15 @@
         <command>rofi -show drun</command>
       </action>
     </keybind>
+    <keybind key="W-Tab">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>rofi -show window</name>
+        </startupnotify>
+        <command>rofi -show window</command>
+      </action>
+    </keybind>
     <!-- Window Tiling: Emulates Windows 7 Snap feature -->
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
