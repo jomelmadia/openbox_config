@@ -6,6 +6,8 @@ mate-volume-control-status-icon &
 nitrogen --restore &
 slack &
 tint2 &
+thunderbird &
+birdtray &
 transmission-gtk &
 volti &
 xscreensaver -nosplash &
